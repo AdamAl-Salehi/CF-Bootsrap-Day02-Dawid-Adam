@@ -1,0 +1,37 @@
+var actor1 = `[{
+    "actor" : "Actor 1",
+    "img" : "src='#'",
+    "name" : "Kim",
+    "age" : "20"
+},
+{
+    "actor" : "Actor 2",
+    "img" : "src='#'",
+    "name" : "Tom",
+    "age" : "21"
+},{
+    "actor" : "Actor 3",
+    "img" : "src='#'",
+    "name" : "Leo",
+    "age" : "22"
+},{
+    "actor" : "Actor 4",
+    "img" : "src='#'",
+    "name" : "John",
+    "age" : "23"
+},{
+    "actor" : "Actor 5",
+    "img" : "src='#'",
+    "name" : "Robert",
+    "age" : "24"
+},{
+    "actor" : "Actor 6",
+    "img" : "src='#'",
+    "name" : "Eric",
+    "age" : "25"
+},{
+    "actor" : "Actor 7",
+    "img" : "src='#'",
+    "name" : "Sarah",
+    "age" : "26"
+}]`
