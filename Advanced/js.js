@@ -1,22 +1,15 @@
 var actors = JSON.parse(actor1);
 
-console.table(actors)
-
-$("#actor1").on("click", function(){
+for (let i = 0; i < 7; i++) {
+    $("#list").append(`<p id="actor${i + 1}"  class="actors" index="${i}">Actor ${i + 1}</p>`)
+}
+$(".actors").on("click", function () {
+    var index = $(this).attr("index");
     $("#result").html(` `);
     $("#result").append(`
-    <h3 class="col-12 d-flex justify-content-center">${actors[0].actor}</h3>
-    <img src="" class="col-12 d-flex justify-content-center">
-    <p class="col-12 d-flex justify-content-center">${actors[0].name}</p>
-    <p class="col-12 d-flex justify-content-center">${actors[0].age}</p>
-    `)
-})
-$("#actor2").on("click", function(){
-    $("#result").html(` `);
-    $("#result").append(`
-    <h3 class="col-12 d-flex justify-content-center">${actors[1].actor}</h3>
-    <img src="" class="col-12 d-flex justify-content-center">
-    <p class="col-12 d-flex justify-content-center">${actors[1].name}</p>
-    <p class="col-12 d-flex justify-content-center">${actors[1].age}</p>
+    <h3 class="col-12 d-flex justify-content-center">${actors[index].actor}</h3>
+    <img src="${actors[index].img}" class=" d-flex img-fluid">
+    <p class="col-12 d-flex justify-content-center">${actors[index].name}</p>
+    <p class="col-12 d-flex justify-content-center">${actors[index].age}</p>
     `)
 })
