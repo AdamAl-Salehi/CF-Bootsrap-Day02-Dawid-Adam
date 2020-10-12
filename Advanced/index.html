@@ -19,6 +19,13 @@
         #list{
         background-color: #958686
         }
+        #list>a{
+            color: #000000;
+            font-size: 3vw;
+        }
+        #list>a>p:hover{
+            color: #575757;
+        }
         #result{
             background-color: gray;
         }
@@ -26,13 +33,25 @@
             margin-bottom: 0;
         }
         img{
-            width: 30%;
+            width: 40%;
             justify-content: center;
             margin:auto;
+            border-radius: 4px;
+            box-shadow: 0px 0px 20px #c7c7c7
+        }
+        .dropdown-menu{
+            background-color: #808080;
+        }
+        .dropdown-menu>a>:hover{
+            color: black;
+        }
+        .dropdown-menu>a>p:hover{
+            background-color: #9c9c9c;
+            text-decoration: none;
         }
     </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light light-blue " role="navigation">
+    <nav class="navbar navbar-expand-md navbar-light light-blue " role="navigation">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -42,17 +61,23 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#home" class="nav-link">Plot</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Actors</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actors
+                    </a>
+                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                </div></li>
                 <li class="nav-item"><a href="#about" class="nav-link">Reviews</a></li>
             </ul>
         </div>
     </nav>
     <div class="container-fluid mt-5">
         <div class="row d-flex justify-content-around">
-            <div id="list" class="col-2 text-center p-3">
+            <div id="list" class="col-11 col-md-2 text-center p-3 d-md-flex flex-md-column align-items-md-center d-flex justify-content-around ">
                 
             </div>
-                <div id="result" class="col-9">
+                <div id="result" class="col-11 col-md-9 mt-5 mt-md-0 ">
             </div>
         </div>
     </div>
